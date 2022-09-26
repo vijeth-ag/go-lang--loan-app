@@ -21,7 +21,7 @@ Design Patterns:
 	Repository Pattern
 	Event driven
 
-microservcies:
+Microservcies:
 
 	1) auth
 		REST API on 9000, gRPC on 9001 
@@ -40,6 +40,6 @@ microservcies:
 		Listens to RabbitMQ for user activities such as Login, Register, Loan Applied... and runs analytics for example - send loan offers etc
 
 
-Arche=itecture diagram
+Architecture diagram
 
 ![Screenshot](diagram.png)
