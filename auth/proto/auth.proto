@@ -1,0 +1,15 @@
+syntax = "proto3";
+option go_package = "../proto";
+
+message AuthRequest {
+    string jwtToken = 1;
+}
+
+message AuthResponse{
+    bool valid = 1;
+}
+
+service AuthService{
+    rpc ValidateJWT(AuthRequest) returns (AuthResponse){}
+}
+

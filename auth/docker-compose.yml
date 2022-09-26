@@ -1,0 +1,30 @@
+version: "3.0"
+
+services:
+  auth-service:
+    image: vijeth/goms:1.0.0
+    ports:
+      - "9000:9000"
+    depends_on:
+      - mongo
+      - redisdb
+
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: pass
+    volumes:
+      - 'mongo:/data/db'      
+  
+  redisdb:
+    image: arm64v8/redis
+    ports:
+      - "6379:6379"
+
+volumes:
+  mongo:
+
+      
