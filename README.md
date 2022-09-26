@@ -1,8 +1,13 @@
-GO MicroService project
+GO Lang MicroService project.
 
-This is a working project to demo Micrservices using Go Lang
+Description:
+This is a working project to demo Micrservices using Go Lang. 
+- On User side, User registers, Login to apply for loan - sugbmit loan applicatiion, 
+- On the Admin side, an admin approves or rejects loan
+- User recieves communication via provided email
 
 Tech stack:
+
 	- Golang
 	- MongoDB
 	- RabbitMQ
@@ -11,7 +16,13 @@ Tech stack:
 	- goMail
 
 
+Design Patterns:
+
+	Repository Pattern
+	Event driven
+
 microservcies:
+
 	1) auth
 		REST API on 9000, gRPC on 9001 
 			- Register, Login, authService (JWT validation via gRPC) for other microserves
@@ -29,6 +40,6 @@ microservcies:
 		Listens to RabbitMQ for user activities such as Login, Register, Loan Applied... and runs analytics for example - send loan offers etc
 
 
-Archeitecture diagram
+Arche=itecture diagram
 
 ![Screenshot](diagram.png)
