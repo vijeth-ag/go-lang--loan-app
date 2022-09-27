@@ -12,6 +12,8 @@ Tech stack:
 	- MongoDB
 	- RabbitMQ
 	- gRPC
+	- Redis
+	- Docker
 	- Angular
 	- goMail
 
