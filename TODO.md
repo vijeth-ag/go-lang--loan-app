@@ -1,2 +1,3 @@
 - user-eng Microservice
-- Fully embrach Events in each microservices
+- Fully embrace Events in each microservices
+- Further evaluate architecture for BFF/API Gatweway pattern
