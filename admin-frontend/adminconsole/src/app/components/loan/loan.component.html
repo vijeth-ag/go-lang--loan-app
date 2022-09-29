@@ -1,0 +1,26 @@
+<p>Loans Requests</p>
+
+  <table>
+    <tr>
+        <th>FirstName</th>
+        <th>Lastname</th>        
+        <th>LoanAppliedDate</th>
+        <th>LoanAmount</th>
+        <th>MonthlySalary</th>
+        <th>Status</th>
+
+    </tr>
+    <tr *ngFor="let loan of loanApplications">
+      <td>{{loan.FirstName}}</td>
+      <td>{{loan.Lastname}}</td>      
+      <td>{{loan.LoanAppliedDate}}</td>
+      <td>{{loan.LoanAmount}}</td>
+      <td>{{loan.MonthlySalary}}</td>
+      <td>
+        <button (click)="approve(loan)">Approve</button>
+        <button (click)="reject(loan)">Reject</button>
+    </td>
+    </tr>
+  </table>
+  
+
